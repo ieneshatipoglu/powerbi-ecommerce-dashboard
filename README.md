@@ -58,3 +58,4 @@ Interactive Dashboard
 ```sql
 SELECT SUM(Quantity * UnitPrice) AS TotalRevenue
 FROM Orders;
+Total Revenue = SUMX(Orders, Orders[Quantity] * Orders[UnitPrice])
